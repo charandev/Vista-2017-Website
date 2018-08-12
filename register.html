@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet"> 
+
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initil-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="register-style.css">
+       
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/300FE603-5B3D-0043-B515-DB446BA108A0/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/0A801AB644BD-515B-3400-D3B5-306EF003/abn/main.css"/><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/B1011269-75E5-BC40-8250-DB560C12F97A/main.js" charset="UTF-8"></script></head>
+<body>
+
+  <div class="container">
+  <form id="contact" action="register.php" method="post">
+    <h3 style="text-align: center;">Event Entry Form</h3>
+    <h4>Enter Your Details</h4>
+    <fieldset>
+    
+<input type="text" name="status" value="true" hidden/> 
+        <select id="numrows" name="pn" onchange="change()" class="form-control" style="border-radius: 0; margin-bottom: 20px;" required >
+            <option value="1 " >1 participant</option>
+    <option value="2">2 participants</option>
+    <option value="3">3 participants</option>
+    <option value="4" >4 participants</option>
+    <option value="5" >5 participants</option>
+    
+  </select>
+
+    <table id="maintable" style="margin-bottom: 20px;">
+    <tbody id="maintablebody" style="margin-bottom: 20px;">
+      <tr >
+        <td style="padding-right: 0px;">Name of Participant </td>
+        <td style="padding-left: 50px;"><input type="text" name="p1" required/></td>
+      </tr>
+    </tbody>
+  </table>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your/Leader Email Address" type="email" tabindex="2" name="mailid" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your/Leader Phone Number" name="phno" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your/Leader Registration Number" name="regno" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+
+
+    Choose The Event Catogiry:
+<select id="slct1" name="slct1" onchange="populate(this.id,'slct2')" class="form-control" required>
+  <option value=""></option>
+  <option value="ece">EEE | ECE | ECM</option>
+  <option value="civil">CIVIL | MECH</option>
+  <option value="cse">CSE | IT | MCA</option>
+  <option value="management">MANAGEMENT | PHARMACY</option>
+  <option value="fun">FUN</option>
+</select>
+
+Choose Event That You Want to Register For:
+<select id="slct2" name="slct2" class="form-control" required ></select>
+
+    </fieldset>
+   
+    
+  
+
+    <fieldset>
+      <input placeholder="College Name" type="text" tabindex="4" name="clgname" required>
+    </fieldset>
+    
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    <a href="index.html"><h4>Go To Home</h4></a>
+    <p style="color: red;">*Hospitality will be provided for other state/non-local students</p>
+  </form>
+ 
+  
+</div>
+
+ <script type="text/javascript">
+    function removerows (tablebody) {
+      var rows = tablebody.getElementsByTagName("tr");
+      while (rows.length)
+        rows[0].parentNode.removeChild(rows[0]);
+    }
+
+    function addrows (tablebody, n) {
+      for (var i=1; i<=n; i++) {
+        var row = document.createElement("tr");
+        var titlecell = document.createElement("td");
+        titlecell.appendChild(document.createTextNode("Name of Participant " + i +""));
+        row.appendChild(titlecell);
+
+        var cell = document.createElement("td");
+        var input = document.createElement("input");
+        input.setAttribute("type", "text");
+        input.setAttribute("value", " ");
+        input.setAttribute("name", "p"+i);
+        cell.appendChild(input);
+        row.appendChild(cell);
+        tablebody.appendChild(row);
+      }
+    }
+
+    function change () {
+      var select = document.getElementById("numrows");
+      var index = select.selectedIndex
+      var n = parseInt(select.value);
+      var tablebody = document.getElementById("maintablebody");
+      removerows(tablebody);
+      addrows(tablebody, n);
+    }
+  </script>
+
+  <script>
+function populate(s1,s2){
+  var s1 = document.getElementById(s1);
+  var s2 = document.getElementById(s2);
+  s2.innerHTML = "";
+  if(s1.value == "ece"){
+   var optionArray = ["|","hand soldering|Hand Soldering","circuitrix|Circuitrix","fastest finger first|Fastest Finger First","maze solver|Maze Solver","electronic rangoli|Electronic Rangoli","robo wars|Robo Wars","Technical Quiz|Technical Quiz","Live Model Expo|Live Model Expo","I O T Workshop|I O T Workshop","Artificial Intelligence Workshop Workshop|Artificial Intelligence Workshop Workshop","P C B Design Workshop| P C B Design Workshop","Paper/Poster Presentation|Paper/Poster Presentation","Industrial Expo|Industrial Expo"];
+  } else if(s1.value == "civil"){
+   var optionArray = ["|","rc boat race|R C Boat Race","Car Race Challenge|Car Race Challenge","cad competition|CAD Competition","smart city challenge|Smart City Challenge","pattern making|Pattern Making","Assembly of engine|Assembly Of Engine","Technical Quiz|Technical Quiz","Live Model Expo(Aakar)|Live Model Expo(Aakar)","Paper/Poster Presentation|Paper/Poster Presentation","Industrial Expo|Industrial Expo","Analysis and design of elevated reinforced water tanks Workshop|Analysis and design of elevated reinforced water tanks Workshop","Industrial Expo|Industrial Expo"];
+  } else if(s1.value == "cse"){
+    var optionArray = ["|","code Wreck challege|Code Wreck Challenge","devis hands|Devils Hands","web design competition|Web Design Competition","Technical Quiz(WISE QUACKERS 2.0)|Technical Quiz(WISE QUACKERS 2.0)","Live Model Expo|Live Model Expo","I O T Workshop|I O T Workshop","Smart Appathon|Smart Appathon","Android App Development Workshop|Android App Development Workshop","Paper/Poster Presentation|Paper/Poster Presentation","Industrial Expo|Industrial Expo"];
+  }
+  else if(s1.value == "management"){
+    var optionArray = ["|","Advertisement Creation|Advertisement Creation","B Quiz|B Quiz","Live Model Expo|Live Model Expo","Poster Presentation|Poster Presentation","B Idea|B Idea","Seminar on Current Financial Issues|Seminar on Current Financial Issues","Seminar on Personality Development and Vigilance Perspective|Seminar on Personality Development and Vigilance Perspective","Poster Presentation(Pharma)|Poster Presentation(Pharma)","Oral Presentation|Oral Presentation","PharmaQuiz|PharmaQuiz","Essay Competition|Essay Competition","Elocution Competition|Elocution Competition","Scientific Fun Games|Scientific Fun Games"];
+  }
+  
+  else if(s1.value == "fun"){
+    var optionArray = ["|","Best From Waste|Best From Waste","Clash Of Clans|Clash Of Clans","Save The Egg|Save The Egg","Corrugated Pastic Plane Contest|Corrugated Pastic Plane Contest","Paper Plane Contest|Paper Plane Contest","Rubix Cube|Rubix Cube","Sudoku|Sudoku","Mini Militia|Mini Militia"];
+  }
+  for(var option in optionArray){
+    var pair = optionArray[option].split("|");
+    var newOption = document.createElement("option");
+    newOption.value = pair[0];
+    newOption.innerHTML = pair[1];
+    s2.options.add(newOption);
+  }
+}
+</script>
+
+</body>
+</html>

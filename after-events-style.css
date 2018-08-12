@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+* {
+ 
+}
+html, body {
+/*   width: 320px; */
+  margin:0 auto;
+/*   height: 480px; */
+  width:100%;
+  
+ 
+}
+
+
+body {
+  background-color: black;
+}
+
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+ul {
+  list-style: none;
+  
+  
+ /* padding: 10px;*/
+  
+  height:500px;
+  
+  padding-bottom: 50px;
+  position:relative;
+  width:100%;
+ 
+  float:left;
+  margin-top: 70px;
+}
+
+
+.list.item.vvv{
+  margin-bottom: 55px;
+}
+
+.title h1{
+ 
+ 
+}
+
+img{
+ 
+}
+.title{
+  
+}
+
+.details a{
+  text-decoration: none;
+}
+
+
+.list.item {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 37.5%;
+  margin: 2%;
+  /*padding: 12px;*/
+  background-color: black;
+  overflow: hidden;
+  box-shadow: 0 0 8px #787878;
+ /* border-top: 1px solid #fefefe;*/
+  max-height: 275px;
+  margin-bottom: 0px;
+  transition-duration:500ms;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*.full .list.item {
+  opacity:0;
+  height:0;
+  padding: 0;
+  border-top: 0px solid transparent;
+}*/
+
+.details{
+  background-color: rgba(0,0,0,0.6);
+}
+
+.top{
+  margin-top: 70px;
+}
+.list.item.active {
+  opacity:1;
+  height: 100%;
+  padding: 12px;
+  max-height: 100%;
+/*   overflow-y:auto; */
+ 
+  box-shadow:0 0 20px #fff;
+}
+.list.item .details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px;
+  width: 100%;
+}
+.list.item .title {
+  color: #fefefe;
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 30px;
+  margin: 0;
+  position: relative;
+}
+.list.item .title:hover {
+  cursor: pointer;
+  color:rgb(224, 62, 62);
+}
+.list.item .details {
+  font-size: 16px;
+  color: #cdcdcd;
+}
+.list.item .datetime {
+  float: left;
+}
+.list.item .location {
+  clear: left;
+  float: left;
+}
+
+
+
+/*.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: center;
+}*/
+
+.background-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin: auto;
+   height: 100%;
+  width: 270px;
+}
+
+@media only screen and (max-width: 640px){
+  ul {
+  list-style: none;
+  width: 90%;
+
+  margin: 0 auto;
+  margin-bottom: 0px !important;
+  padding: 0;
+  
+  height:600px;
+  
+  padding-bottom: 50px;
+  position:relative;
+  width:100%;
+ 
+  float:left;
+  margin-top: 70px;
+}
+.list.item{
+  width: 100%;
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+}
+
+}

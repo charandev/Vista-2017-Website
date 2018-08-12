@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>TechFest2k17</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initil-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+	<link rel="stylesheet" type="text/css" href="projectstyle.css">
+	<link rel="icon" href="vista.png" type="image/gif" sizes="16x8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
+	
+ </head>
+<body>
+
+<div class="header" id="navigation">
+<div class="nav"> 
+
+	<a href="index.html"><img class="logo img-responsive" src="ttff.png"/></a>
+	<label for="toggle" style="color:white !important; ">&#9776;</label>
+	<input type="checkbox" id="toggle"/>
+	
+	<div class="menu">
+
+		<a href="#" id="active">HOME</a>
+		<a href="events.html">EVENTS</a>
+		<a href="vista.html">ABOUT VISTA</a>
+    <a href="gallery.html">GALLERY</a>
+		<a href="contactus.html">CONTACT US</a>
+
+		
+
+	</div>
+	</div>
+
+	<hr class="style14-1">
+</div>
+
+
+
+<a target="_blank" href="https://drive.google.com/open?id=0B7QGgjd84vlRQV96Z0ZvRHIwUmNrOGVGYkNQUjVPWVdXeFBZ"><button id="button1" type="button" class="btn btn-info btn-lg">Watch<br>Poster</button></a>
+  
+<div class="container" style="min-width: 200px; overflow-x: hidden;">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button id="button" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" ">Watch<br>Promo</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content ">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body videoback">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sq8ISpdiaLc?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer close">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" >Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+<div class="timer" >
+<h1>VISTA 2017</h1>
+<br>
+<h4>
+	GRAND EVENT STARTS IN
+</h4>
+
+
+<p id="demo"></p><br>
+<a href="events.html"><button id="button3" type="button" class="btn btn-info btn-lg">Register Now</button></a>
+</div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 14, 2019 00:00:").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<!-- banner -->
+
+<!-- One -->
+			<div class="newstyle" id="next-slide">
+
+		<div class="row">
+		<h2 class="title">OUR <span>HIGHLIGHTS</span></h2>
+		<p id="text">SOME MEMORIES OF<span> VISTA 2k16</span></p>
+			<div class="col-sm-3 gap">
+				<div class="block">
+					<h3>EVENTS</h3>
+					<h1>25</h1>
+
+				</div>
+			</div>
+			<div class="col-sm-3 gap">
+					
+				<div class="block">
+					<h3>COLLEGES PARTICIPATED</h3>
+					<h1>10</h1>
+					
+				</div>
+				
+			</div>
+			<div class="col-sm-3 gap">
+				<div class="block">
+				<h3>NUMBER OF PARTICIPANTS</h3>
+					<h1>1.2k+</h1>
+					
+					
+				</div>
+			</div>
+			<div class="col-sm-3 gap">
+				<div class="block">
+					
+					<h3>PRIZES WORTH </h3>
+					<h1>5,00,000/-</h1>
+				</div>
+			</div>
+			<p>BE A PART OF THIS GRAND EVENT <span>VISTA 2017</span></p>
+		<br>
+
+		</div>
+	</div>
+	
+
+	<div class="speakers container">
+		<h2>HONOURABLE DIGNITARIES</h2>
+    
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="images/chairman.jpg" alt="Rathiah" width="300" height="200">
+    </a>
+    <div class="desc"><span>Dr.Lavu Rathiah</span><br>Chairman, Vignan</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="images/pavan.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><span>Mr.Pavan Krishna</span><br>CEO Vignan Vizag</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="images/challa.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+   <div class="desc"><span>Dr.Challa Narasimham</span><br>Principal,VIIT</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/view.jpg">
+      <img src="images/view.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><span>Prof. Akula Sesha Rao</span><br>Principal,VIEW</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/bg.jpg">
+      <img src="images/srinivas.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><span>Dr.Srinivas Rao</span><br>Principal,VIPT</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div style="padding:10px; margin: 10px;">
+  
+  <p>Be a part of <span style="font-weight: bold; color: black;">#vista2k17</span></p>
+</div>
+
+	</div>
+
+	
+
+	
+
+
+
+
+
+
+<div class="container-fluid address-top">
+<h1>Reach Us</h1>
+  <div class="row address-inner">
+    <div class="col-sm-3" id="address">
+      <h4 style="font-weight: bold;">Vignan's Institute of Information Technology </h4>
+      <h4>Beside VSEZ</h4>
+      <h4>Duvvada</h4>
+      <h4>Vizag</h4>
+      <h4>Ph: 0891 2755222</h4>
+      <h4>530049</h4>
+    </div>
+    <div class="col-sm-9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.65924711455!2d83.16807371539343!3d17.713550187883907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3968cb428b8087%3A0xaa3e198c43836a65!2sVignan&#39;s+Institute+Of+Information+Technology!5e0!3m2!1sen!2sin!4v1503735706932" width="600" height="110px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>  
+</div>
+
+
+
+
+  
+
+
+<!-- footer -->
+<div class="social" id="navigation">
+	<hr class="style14-2">
+		<a href="https://www.facebook.com/VignanVista/"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.youtube.com/watch?v=sq8ISpdiaLc&feature=youtu.be"><i class="fa fa-youtube"></i></a>
+		<a href="https://twitter.com/vignanvizag?s=08"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.instagram.com/vv24x7/"><i class="fa fa-instagram"></i></a>
+		<a href="#"><i class="fa fa-arrow-up" ></i></a>
+	</div>	
+	<!-- footer -->
+
+</body>
+</html>

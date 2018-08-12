@@ -1,0 +1,581 @@
+/*------------------------------------------*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic);
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+/* Header */
+.large-header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding-top: 360px;
+  background: aliceblue;
+}
+
+#large-header {
+
+
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+
+
+
+}
+
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+@media only screen and (max-width : 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*.situation_container_for{
+background: #eceff1;  
+position: relative;
+width: 100%;
+height: 100%;
+}*/
+
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+.awesome_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* min-height:720px; */
+  overflow: hidden;
+  z-index: -1;
+}
+.awesome_bg:after,
+.awesome_bg:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.awesome_bg:before{
+  border-radius: 100%;
+  opacity: .15;
+}
+
+.awesome_bg > .triangle_1,
+.awesome_bg > .triangle_2,
+.awesome_bg > .triangle_3,
+.awesome_bg > .triangle_4,
+.awesome_bg > .triangle_5{
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;  
+  border-style: solid;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); 
+
+}
+.awesome_bg > .triangle_1{
+  bottom:-100px;
+  left: -150px;
+  border-width: 0 400px 400px 400px;
+
+  opacity: .1;
+
+  -webkit-transform:rotate(15deg);
+  -moz-transform:rotate(15deg);
+  -ms-transform:rotate(15deg);
+  -o-transform:rotate(15deg);
+  transform:rotate(15deg);
+
+}
+
+.awesome_bg > .triangle_2{
+  position: absolute;
+  top:-150px;
+  left: -250px;
+  width: 300px;
+  border-width: 400px 800px 0 0;
+
+  opacity: .5;
+  -webkit-transform:rotate(-15deg);
+  -moz-transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -o-transform:rotate(-15deg);
+  transform:rotate(-15deg);
+}
+
+.awesome_bg > .triangle_3{
+  position: absolute;
+  bottom: -100px;
+  right: -397px;
+  height: 0;
+  width: 150px;
+  border-width: 500px 650px 0 0;
+  opacity: .2;
+
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.awesome_bg > .triangle_4{
+  position: absolute;
+  bottom:-50px;
+  right: -150px;
+  opacity: .15;
+  border-width: 0 270px 410px 470px;
+}
+.awesome_bg > .triangle_5{
+  position: absolute;
+  top:-150px;
+  right: -300px;
+  opacity: .1;
+
+  border-width: 0 400px 400px 400px;
+
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+
+}
+
+
+
+/*------------------=========-------------*/
+/*booker colors START*/
+.booker_colors .awesome_bg{
+  background: #00bf93;  
+}
+.booker_colors .awesome_bg:after{
+  /*background: #3e8a7e;*/
+  box-shadow:inset 0 0 200px 200px rgba(34,101,105,.45);   
+}
+
+.booker_colors .awesome_bg:before{
+  background: rgba(62,138,126, 1);
+  box-shadow: 0 0 200px 200px rgba(62,138,126,1); 
+  background-image: url('../img/Background-Pattern.png');
+}
+
+
+.booker_colors .awesome_bg > .triangle_1{
+  border-color: transparent transparent #00ffea transparent;
+  _border-color: #000000 #000000 #00ffea #000000;  
+}
+
+.booker_colors .awesome_bg > .triangle_2{
+  border-color: #00a178 transparent transparent transparent;
+  _border-color: #00a178 #000000 #000000 #000000;
+}
+
+.booker_colors .awesome_bg > .triangle_3{  
+  border-color: #00a178 transparent transparent transparent;
+  _border-color: #00a178 #000000 #000000 #000000;
+}
+.booker_colors .awesome_bg > .triangle_4{  
+  border-color:transparent transparent #00a178 transparent;
+  _border-color: #000000 #000000 #00a178 #000000;
+}
+
+.booker_colors .awesome_bg > .triangle_5{  
+  border-color: transparent transparent #00ffea transparent;
+  _border-color: #000000 #000000 #00ffea #000000;
+}
+/*=======-----booker colors END-----=========*/
+
+
+/*------------------=========-------------*/
+/*lawyer colors START*/
+.lawyer_colors .awesome_bg{
+  background: #008fbf;  
+}
+.lawyer_colors .awesome_bg:after{
+  /*background: #3e8a7e;*/
+  box-shadow:inset 0 0 200px 200px rgba(42,124,140,.45);   
+}
+
+.lawyer_colors .awesome_bg:before{
+  background: rgba(38,255,242, 1);
+  box-shadow: 0 0 200px 200px rgba(38,255,242, 1);
+  background-image: url('../img/Background-Pattern.png');
+}
+
+
+.lawyer_colors .awesome_bg > .triangle_1{
+  border-color: transparent transparent #9cffff transparent;
+  _border-color: #000000 #000000 #9cffff #000000;  
+}
+
+.lawyer_colors .awesome_bg > .triangle_2{
+  border-color: #2c71a0 transparent transparent transparent;
+  _border-color: #2c71a0 #000000 #000000 #000000;
+}
+
+.lawyer_colors .awesome_bg > .triangle_3{  
+  border-color: #007eab transparent transparent transparent;
+  _border-color: #007eab #000000 #000000 #000000;
+}
+.lawyer_colors .awesome_bg > .triangle_4{  
+  border-color:transparent transparent #0073a5 transparent;
+  _border-color: #000000 #000000 #0073a5 #000000;
+}
+
+.lawyer_colors .awesome_bg > .triangle_5{  
+  border-color: transparent transparent #85ffff transparent;
+  _border-color: #000000 #000000 #85ffff #000000;
+}
+/*=======-----lawyer colors END-----=========*/
+
+
+/*------------------=========-------------*/
+/*booker colors START*/
+.sign_colors .awesome_bg{
+  background: #ffd600;
+  position: fixed;
+}
+.sign_colors .awesome_bg:after{
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  /* background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgba(255,179,0,0) 0%, rgba(229,130,80,0.4) 100%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgba(255,179,0,0) 0%, rgba(229,130,80,0.4) 100%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgba(255,179,0,0) 0%, rgba(229,130,80,0.4) 100%); */
+}
+
+.sign_colors .awesome_bg:before{
+  /* background: #FF7B00; */
+  /* box-shadow: 0 0 200px 200px rgba(229,130,80,1); */
+}
+
+
+.sign_colors .awesome_bg > .triangle_1{
+  border-color: transparent transparent #FFE17E transparent;
+  border-color: transparent transparent #E58250 transparent;
+  border-color: transparent transparent #FFF300 transparent;
+  opacity: .55;
+}
+
+.sign_colors .awesome_bg > .triangle_2{
+  top: -150px;
+  left: -130px;
+  border-color: #E58250 transparent transparent transparent;
+  opacity: .1;
+  z-index: initial;
+}
+
+.sign_colors .awesome_bg > .triangle_3{
+  border-color: #E58250 transparent transparent transparent;
+  opacity: .1;
+}
+.sign_colors .awesome_bg > .triangle_4{
+  border-color: transparent transparent #FFF300 transparent;
+  opacity: .25;
+  bottom: -120px;
+  right: -530px;
+  border-width: 0 1000px 500px 200px;
+}
+
+.sign_colors .awesome_bg > .triangle_5{
+  border-color: transparent transparent #FFF300 transparent;
+  opacity: .25;
+}
+/*=======-----booker colors END-----=========*/
+
+.sign_colors2 .awesome_bg{
+  background: #ffd600;
+  background: #25408f;
+  background: #060f1e;
+  position: fixed;
+}
+.sign_colors2 .awesome_bg:after{
+  top: 20%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 55%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 120px 110px rgba(41, 58, 85, 0.45), 0px -30px 200px 640px rgba(41, 58, 85, 0.45);
+  /* background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgba(255,179,0,0) 0%, rgba(229,130,80,0.4) 100%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgba(0, 50, 255, 0) 0%, rgba(40, 50, 119, 0.4) 100%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgba(255,179,0,0) 0%, rgba(229,130,80,0.4) 100%); */
+  background: transparent;
+}
+
+.sign_colors2 .awesome_bg:before{
+  border-radius: 0;
+  opacity: .55;
+  background: -moz-linear-gradient(left, rgba(146, 130, 250, 0.22) 0%, rgba(180,60,20,0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(146, 130, 250, 0.22)), color-stop(100%,rgba(180,60,20,0)));
+  background: -webkit-linear-gradient(to right, rgba(146, 130, 250, 0.22) 0%,rgba(180,60,20,0) 100%);
+  background: -o-linear-gradient(to right, rgba(146, 130, 250, 0.22) 0%,rgba(180,60,20,0) 100%);
+  background: -ms-linear-gradient(to right, rgba(146, 130, 250, 0.22) 0%,rgba(180,60,20,0) 100%);
+  background: linear-gradient(to right, rgba(146, 130, 250, 0.22) 0%,rgba(180,60,20,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75faaa82', endColorstr='#00b43c14',GradientType=1 );
+}
+
+
+.sign_colors2 .awesome_bg > .triangle_1{
+  border-color: transparent transparent #FFE17E transparent;
+  border-color: transparent transparent #E58250 transparent;
+  border-color: transparent transparent #132242 transparent;
+  opacity: .55;
+}
+
+.sign_colors2 .awesome_bg > .triangle_2{
+  top: -150px;
+  left: -130px;
+  border-color: #153577 transparent transparent transparent;
+  opacity: .1;
+  z-index: initial;
+}
+
+.sign_colors2 .awesome_bg > .triangle_3{
+  border-color: #50D2E5 transparent transparent transparent;
+  opacity: .1;
+}
+.sign_colors2 .awesome_bg > .triangle_4{
+  border-color: transparent transparent #070B19 transparent;
+  opacity: .25;
+  bottom: -120px;
+  right: -530px;
+  border-width: 0 1000px 500px 200px;
+}
+
+.sign_colors2 .awesome_bg > .triangle_5{
+  border-color: transparent transparent #082A52 transparent;
+  opacity: .25;
+}
+
+/*=======-----booker colors END-----=========*/
+
+.sign_colors3 .awesome_bg{
+  background: #00bf93;
+  /* background: #1aa47f; */
+  position: fixed;
+}
+.sign_colors3 .awesome_bg:after{
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgba(255,179,0,0) 0%, rgba(229,130,80,0.4) 100%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgba(73, 193, 164, 0.27) 0%, rgba(3, 62, 29, 0.4) 100%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgba(255,179,0,0) 0%, rgba(229,130,80,0.4) 100%);
+}
+
+.sign_colors3 .awesome_bg:before{
+  border-radius: 0;
+  opacity: .55;
+  background: -moz-linear-gradient(left, rgba(146, 130, 250, 0.22) 0%, rgba(180,60,20,0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(146, 130, 250, 0.22)), color-stop(100%,rgba(180,60,20,0)));
+  background: -webkit-linear-gradient(to right, rgba(146, 130, 250, 0.22) 0%,rgba(180,60,20,0) 100%);
+  background: -o-linear-gradient(to right, rgba(146, 130, 250, 0.22) 0%,rgba(180,60,20,0) 100%);
+  background: -ms-linear-gradient(to right, rgba(146, 130, 250, 0.22) 0%,rgba(180,60,20,0) 100%);
+  background: linear-gradient(to right, rgba(34, 175, 110, 0.22) 0%,rgba(16, 74, 59, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75faaa82', endColorstr='#00b43c14',GradientType=1 );
+}
+
+
+.sign_colors3 .awesome_bg > .triangle_1{
+  border-color: transparent transparent #00ffea transparent;
+  _border-color: #000000 #000000 #00ffea #000000;
+  /* opacity: .55; */
+}
+
+.sign_colors3 .awesome_bg > .triangle_2{
+  top: -150px;
+  left: -130px;
+  border-color: #00a178 transparent transparent transparent;
+  _border-color: #00a178 #000000 #000000 #000000;
+  opacity: .1;
+  z-index: initial;
+}
+
+.sign_colors3 .awesome_bg > .triangle_3{
+  border-color: #00a178 transparent transparent transparent;
+  _border-color: #00a178 #000000 #000000 #000000;
+  opacity: .1;
+}
+.sign_colors3 .awesome_bg > .triangle_4{
+  border-color:transparent transparent #00a178 transparent;
+  _border-color: #000000 #000000 #00a178 #000000;
+  opacity: .25;
+  bottom: -120px;
+  right: -530px;
+  border-width: 0 1000px 500px 200px;
+}
+
+.sign_colors3 .awesome_bg > .triangle_5{
+  border-color: transparent transparent #00ffea transparent;
+}
+
+
+.sign_colors .awesome_bg,
+.sign_colors .awesome_bg:after,
+.sign_colors .awesome_bg:before,
+.sign_colors .awesome_bg > .triangle_1,
+.sign_colors .awesome_bg > .triangle_2,
+.sign_colors .awesome_bg > .triangle_3,
+.sign_colors .awesome_bg > .triangle_4,
+.sign_colors .awesome_bg > .triangle_5,
+.sign_colors2 .awesome_bg,
+.sign_colors2 .awesome_bg:after,
+.sign_colors2 .awesome_bg:before,
+.sign_colors2 .awesome_bg > .triangle_1,
+.sign_colors2 .awesome_bg > .triangle_2,
+.sign_colors2 .awesome_bg > .triangle_3,
+.sign_colors2 .awesome_bg > .triangle_4,
+.sign_colors2 .awesome_bg > .triangle_5,
+.sign_colors3 .awesome_bg,
+.sign_colors3 .awesome_bg:after,
+.sign_colors3 .awesome_bg:before,
+.sign_colors3 .awesome_bg > .triangle_1,
+.sign_colors3 .awesome_bg > .triangle_2,
+.sign_colors3 .awesome_bg > .triangle_3,
+.sign_colors3 .awesome_bg > .triangle_4,
+.sign_colors3 .awesome_bg > .triangle_5{
+
+  /*    -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -ms-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;*/
+
+  /*    -webkit-transition: all .15s  cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all .15s  cubic-bezier(0.55, 0, 0.1, 1);
+  -ms-transition: all .15s  cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all .15s  cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all .15s  cubic-bezier(0.55, 0, 0.1, 1);*/
+
+  /*     -webkit-transition: all .35s  cubic-bezier(0.73, 0.14, 0.4, 1.58);
+  -moz-transition: all .35s  cubic-bezier(0.73, 0.14, 0.4, 1.58);
+  -ms-transition: all .35s  cubic-bezier(0.73, 0.14, 0.4, 1.58);
+  -o-transition: all .35s  cubic-bezier(0.73, 0.14, 0.4, 1.58);
+  transition: all .35s  cubic-bezier(0.73, 0.14, 0.4, 1.58); */
+}
+
+
+.circle_light{
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 380px;
+  margin: auto;
+  border-radius: 100%;
+  background: rgba(39, 179, 245, 0.35);
+  box-shadow: 0px -30px 200px 250px rgba(39, 179, 245, 0.45);
+  opacity: 0.55;
+}
+.circle_light:after{
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 380px;
+  margin: auto;
+  border-radius: 100%;
+  background: rgba(39, 179, 245, 0.45);
+  box-shadow: 0px -30px 100px 10px rgba(39, 179, 245, 0.45);
+  z-index: 1;
+}
+.bg_w_img .awesome_bg{
+  display: block;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  background: #25408f;
+}
+.awesome_bg .img_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+.awesome_bg .img_container > img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -2;
+}
+
+
+/*-------=====--------*/
+.cb_container{
+  position: relative;
+  padding: 350px 24px;
+  background: #fff;
+  border-radius: 6px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px 0px rgba(41, 58, 85, 0.15),0px 2px 15px 0px rgba(66, 165, 245, 0.25);
+
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 13px 0px rgba(41, 58, 85, 0.15),0px -5px 38px 0px rgba(66, 165, 245, 0.25);
+margin-bottom: 120px;
+}
+.content_block{
+  z-index: 1;
+  position: relative;
+
+}

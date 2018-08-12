@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Saira');
+.wrapper{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	
+	box-sizing: border-box;
+
+}
+a{
+	text-decoration: none;
+}
+.cl{
+	clear: both;
+}
+
+.hell{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+  
+  
+
+}
+#toggle{
+	display: none !important;
+}
+.heading, .des{
+	width: 50em;
+	text-align: center;
+	line-height: 2em;
+	color: white;
+	
+}
+.button{
+	width: 100%;
+	margin: 0 auto;
+	
+	font-family: 'Anton', sans-serif;
+	color: white;
+	letter-spacing: 3px;
+	border:1px solid white !important;
+	
+
+
+}
+.button:hover{
+	background-color: white;	
+	color:red !important;
+}
+.heading{
+	font-family: 'Anton', sans-serif;
+	width: 100%;
+	color: black;
+	
+}
+.heading h1{
+	margin:0 auto;
+	
+		color: white;
+	border-bottom: 1px solid grey;
+}
+.des{
+	font-family: 'Saira', sans-serif;
+	font-size: 1.3em;
+	font-weight: thin;
+}
+
+@media only screen and (max-width:850px) {
+	.heading, .des{
+	width: 20em;
+	text-align: center;
+	line-height: 1em;
+	color: white;
+	
+}
+.content{
+	clear: right;
+}
+.hell{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+  
+   height: 70%;
+
+   
+
+}
+.heading h1{
+	margin:0 auto;
+	
+	border-bottom: 1px solid white;
+	font-size: 1.8em;
+	margin-left:40px; 
+	margin-bottom: 10px;
+}
+.des{
+	font-family: 'Saira', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-top: 50px;
+}
+.button{
+	text-align: center;
+	margin-left: 15px;
+	margin-top: 50px;
+}
+.wrapper{
+	height: 100%;
+
+}
+.container{
+	overflow-y: scroll;
+	
+	margin:auto 0;
+}
+
+}
+
+@media only screen and (max-width:640px) {
+	.hell{
+		width: 80%;
+		margin-left:15px;
+		margin-top:40px;
+		height:80vh;
+		overflow:scroll;
+
+		}
+	.des{
+		font-size: 1.3em;
+
+		width:100%;
+		
+		margin-top: -10px;
+		line-height: 17px;
+		margin-bottom: 0;
+	}
+	.des p{
+		margin:0 auto;
+		line-height: 1.2em;
+
+	}
+	.heading{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.heading h1{
+		font-size: 2em;
+		text-align: center;
+
+		margin:0 auto;
+	}
+
+
+	.button{
+		margin-top: 0;
+		margin:0 auto;
+	}
+}
+
+

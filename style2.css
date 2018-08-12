@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+.speakers h2, .speakers h4{
+  text-align: center;
+  margin: 30px;
+}
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    
+}
+div.desc span{
+  font-weight: bold;
+}
+.speakers{
+  margin-bottom: 90px;
+  color:black;
+  border-radius: 30px;
+  background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.gallery1 img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 19.999999%;
+
+
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+    
+}
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+h2{
+  text-align: center;
+}
+
+
+.rowplace img{
+  float:left;
+  margin:3em;
+  height: auto;
+
+}
+
+#demo{
+  text-align: center;
+  font-size: 70px;
+  margin-top: 20px;
+  color: white;
+  width: 90%;
+  background:rgba(0,0,0,0.7);
+  border-radius: 20px;
+  clear: right;
+  margin:0 auto;
+  
+
+}
+
+.timer{
+  height: 82vh;
+  background:url("images/theme.jpg") no-repeat center;
+
+  margin-top: 0px;
+  /*background-color: rgba(0,0,0,0.2);*/
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+   z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+}
+
+.timer h1{
+  font-size: 5vw;
+  color:white;
+  padding-top: 30px;
+  letter-spacing: 5px;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 40px;
+ }
+
+ .timer h3 span{
+  color: red;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  font-size: 2em;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 30px;
+ }
+.timer h3{
+  font-size: 2em;
+  font-weight: bold;
+}
+ 
+
+ iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding:0px 0 0px 0;
+    }
+
+    .videoback{
+      height: 70vh;
+    }
+
+    .close{
+      margin-top: 0px;
+    }
+
+    
+
+
+
+
+
+#button{
+  position: fixed;
+background-color: rgba(0,0,0,0.7) !important;
+  z-index: 100;
+  width: 10%;
+  bottom:70px;
+ left:20px;
+ 
+ border: 1px solid white;
+
+
+}
+
+#button:hover{
+  background-color: rgba(255,255,255,0.7) !important;
+  color:black;
+  font-weight: bold;
+}
+#button1:hover{
+  background-color: rgba(255,255,255,0.7) !important;
+  color:black;
+  font-weight: bold;
+}
+
+
+button:hover{
+  
+}
+
+
+#button1{
+  position: fixed;
+    width: 10%;
+    background-color: rgba(0,0,0,0.7) !important;
+     z-index: 100;
+      bottom:70px;
+    right:20px;
+    border: 1px solid white;
+}
+
+#button3{
+  margin-top: 30px;
+ 
+}
+
+@media only screen and (max-width:850px) {
+  #demo{
+    font-size: 50px;
+    margin-bottom: -10px;
+    width: 60%;
+  }
+
+  .timer h1{
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+  }
+
+  #button1, #button{
+    font-size: 10px;
+    letter-spacing: 2px;
+    width: 25%;
+  }
+
+  #button3{
+    margin-top: 40px;
+  }
+  }

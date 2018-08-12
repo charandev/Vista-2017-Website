@@ -1,0 +1,100 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Archivo', sans-serif;
+	
+	
+
+		align-items: center;
+		width:100vh; 
+		overflow-x: hidden;
+		overflow-y: hidden;
+		
+ 		margin-bottom: 100px;
+}
+ 
+
+
+.fun{
+	width:100%;
+}
+
+/*------------------------------------------------------------------------*/
+
+*{
+
+}
+.events{
+	background: url("eventsback.jpg") repeat center;
+	background-attachment: fixed;
+	background-size: cover;	
+	
+	height: 96vh;
+	
+	margin-top:70px;
+	margin-left: 0;
+	width: 100%;
+	overflow-x: hidden;
+
+}
+.container{
+	margin-top: 0px;
+
+}
+
+h2{
+	color:white;
+	border-bottom: 2px solid white;
+}
+
+
+.cap{
+	text-align: center;
+	background-color: black;
+}
+.panel-body{
+	padding: 0;
+	margin: 0;
+}
+a.cap{
+	text-decoration: none;
+}
+ 
+.box{
+font-weight: bold;
+color: white;
+
+}
+.last{
+	margin-bottom: 100px;
+}
+
+.box:hover {
+	background-color:rgba(255, 255, 255, 0.2);
+	color:grey;
+
+}
+
+@media only screen and (max-width:850px) {
+
+body{
+	margin:0 auto !important;
+	width: 100vh;
+	height: 100vh;
+
+}
+
+.fun{
+	width:100%;
+}
+.events{
+	margin-right: 0;
+	margin-left: 0px;
+
+}
+.box1{
+		margin-left: auto;
+		margin-right: auto;
+}
+
+}
